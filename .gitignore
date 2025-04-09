@@ -1,28 +1,58 @@
+# Python and development
+*.py[cod]
 *.pyc
 *~
 *.swo
 *.swp
-db.sqlite3
-media
-media-images
-cache
-.idea
-static/CACHE
+__pycache__/
+.Python
+pip-log.txt
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Django
+media/
+media-images/
+cache/
+static/CACHE/
+staticfiles/
+
+# CSS/SASS
 .sass-cache/
 main.css
 main.css.map
 ref.css
 ref.css.map
-.coverage
-crm/dev_settings\.py
-env
-.env
+
+# Documentation
 docs/build
-celerybeat-schedule
+
+# Testing and Coverage
+.coverage
+.coverage.*
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# Project specific
+crm/dev_settings\.py
 local_settings.py
-media
-.sass-cache
 server.log
+celerybeat-schedule
+
+# Build and Distribution
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea
 .vscode
-staticfiles
-.venv
